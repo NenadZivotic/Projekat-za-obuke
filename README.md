@@ -7,5 +7,4 @@ Tehnologije koje su koriscene su: JavaScript, HTML i Css, kao i odredjeni broj b
 
 Glavne tehnologije koriscene: JavaScript(ES5, ES6), HTML5, CSS3
 
-Sporedne tehnologije koriscene: Bootstrap, jQuery, owl, magnific popup, animate, open-iconic-bootstrap
-
+Sporedne tehnologije koriscene: Bootstrap, jQuery, owl, magnific popup, animate, icomoon...
