@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #utisak-pozadina {
+    background-image: url("/images/Images/utisak8.jpg");
+  
+    height: 100%; 
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .delete {
+margin-left: 0% !important;
+float: right;
+}
+
+.cardBody {
+padding: 5px;
+}
+
+.pozadina {
+padding-top: 140px;
+padding-bottom: 0px;
+}
+
+.btn-upozorenje {
+color: rgb(112, 65, 10);
+background-color: #FDA403;
+}
+
+.spread {
+height: 200px;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(112, 65, 10);
+}
+
+li {
+float: center;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+.listPozadina {
+background: #ccc;
+}
+
+.ime {
+border: 2px solid #FDA403;
+}
+
+.utisak {
+border: 2px solid #FDA403;
+}
