@@ -5,7 +5,7 @@ body, html {
   }
   
   #utisak-pozadina {
-    background-image: url("/images/Images/utisak8.jpg");
+    background-image: url("../images/utisak8.jpg");
   
     height: 100%; 
   
