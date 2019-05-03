@@ -2,7 +2,8 @@ $(document).ready(function($) {
 
 	"use strict";
 
-	// loader
+	// Loader
+
 	var loader = function() {
 		setTimeout(function() { 
 			if($('#site-loader').length > 0) {
@@ -11,6 +12,9 @@ $(document).ready(function($) {
 		}, 1);
 	};
 	loader();
+
+
+	// Nasa ponuda ove sezone
 
 	var carousel = function() {
 		$('.owl-carousel').owlCarousel({
@@ -35,7 +39,8 @@ $(document).ready(function($) {
 	};
 	carousel();
 
-	// scroll
+	// Scroll na dole i navbar
+
 	var scrollWindow = function() {
 		$(window).scroll(function(){
 			var $w = $(this),
@@ -75,33 +80,7 @@ $(document).ready(function($) {
 	};
 	scrollWindow();
 
-	var counter = function() {
-		
-		$('#section-counter').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('site-animated') ) {
-
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.site-number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-						console.log(num);
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
-				
-			}
-
-		} , { offset: '95%' } );
-
-	}
-	counter();
-	
-	
+	// Efekti animacije i ulaska elemenata
 
 	var contentWayPoint = function() {
 		var i = 0;
@@ -139,7 +118,8 @@ $(document).ready(function($) {
 	};
 	contentWayPoint();
 
-	// navigation
+	// Smooth navigacija za single-page
+
 	var OnePageNav = function() {
 		$(".smoothscroll[href^='#'], #site-nav ul li a[href^='#']").on('click', function(e) {
 		 	e.preventDefault();
@@ -164,24 +144,25 @@ $(document).ready(function($) {
 	OnePageNav();
 
 
-	// magnific popup
+	// Magnific Popup (za slike)
+
 	$('.image-popup').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
     closeBtnInside: false,
     fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    mainClass: 'mfp-no-margins mfp-with-zoom', // Skloni margine sa leva i desna
      gallery: {
       enabled: true,
       navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      preload: [0,1] // 0 pre trenutne slike, 1 posle trenutne slike
     },
     image: {
       verticalFit: true
     },
     zoom: {
       enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
+      duration: 300
     }
 	});
 	
