@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5,
 
 /* Prilikom smanjivanja ekrana */
 
-@media screen and (max-width: 1269px) {
+@media screen and (max-width: 1200px) {
   .site-navbar-light {
     background: #000 !important;
     top: 0;
