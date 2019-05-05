@@ -66,6 +66,8 @@ h1, h2, h3, h4, h5,
   color: #ccc;
 }
 
+/* Hover na linkove - beljenje */
+
 .site-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
   color: #fff;
 }
@@ -78,6 +80,8 @@ h1, h2, h3, h4, h5,
     padding-right: 0px;
   }
 }
+
+/* CTA za slanje na sekcije */
 
 .site-navbar-light .navbar-nav > .nav-item.site-cta a {
   color: #fff;
@@ -92,6 +96,8 @@ h1, h2, h3, h4, h5,
   font-size: 16px;
   letter-spacing: .1em;
 }
+
+/* Pobeli navbar na dole */
 
 .site-navbar-light.scrolled {
   position: fixed;
@@ -131,15 +137,21 @@ h1, h2, h3, h4, h5,
   letter-spacing: .1em;
 }
 
+/* Sekcije pocrne */
+
 .site-navbar-light.scrolled .nav-link {
   padding-top: 0.7rem !important;
   padding-bottom: 0.7rem !important;
   color: #000 !important;
 }
 
+/* Trenutna sekcija */
+
 .site-navbar-light.scrolled .nav-link.active {
   color: #FDA403 !important;
 }
+
+/* Posle awake-a */
 
 .site-navbar-light.scrolled.awake {
   margin-top: 0px;
@@ -148,11 +160,15 @@ h1, h2, h3, h4, h5,
   transition: .3s all ease-out;
 }
 
+/* Razmak izmedju aktiva i awake-a*/
+
 .site-navbar-light.scrolled.sleep {
   -webkit-transition: .3s all ease-out;
   -o-transition: .3s all ease-out;
   transition: .3s all ease-out;
 }
+
+/* Brand pocrni na skrol na dole */
 
 .site-navbar-light.scrolled .navbar-brand {
   color: #000;
@@ -196,6 +212,8 @@ h1, h2, h3, h4, h5,
   }
 }
 
+/* Ostavite vas utisak dugme */
+
 .site-cover a {
   position: relative;
   color: #fff;
@@ -211,6 +229,8 @@ h1, h2, h3, h4, h5,
   height: 2px;
   content: " ";
 }
+
+/* Unutrasnjost dugmeta za utisak */
 
 .site-cover.overlay {
   position: relative;
@@ -233,6 +253,8 @@ h1, h2, h3, h4, h5,
 .site-uppercase {
   font-size: 30px;
 }
+
+/* Specijaliteti kuce */
 
 .menu-item {
   margin-bottom: 30px;
@@ -330,6 +352,8 @@ h1, h2, h3, h4, h5,
   color: #fff;
 }
 
+/* Saznajte vise dugmad */
+
 .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
   border-color: #cb8402;
   background: #cb8402;
@@ -346,19 +370,6 @@ h1, h2, h3, h4, h5,
   background: #fff;
   border-color: #fff;
   color: #000;
-}
-
-.form-control {
-  border: none;
-  height: 55px !important;
-  background: #e6e6e6 !important;
-  color: #000 !important;
-  font-size: 18px;
-  border-radius: 0px;
-}
-
-textarea.form-control {
-  height: inherit !important;
 }
 
 .site-vh-100 {
@@ -415,6 +426,8 @@ textarea.form-control {
   }
 }
 
+/* Izgled dugmadi */
+
 .site-tab-nav li a {
   text-transform: uppercase;
   font-size: 14px;
@@ -423,6 +436,8 @@ textarea.form-control {
   border: 2px solid #ccc;
   border-radius: 10px !important;
 }
+
+/* Aktivno dugme */
 
 .site-tab-nav li a.active {
   background: none !important;
@@ -442,29 +457,6 @@ textarea.form-control {
 .site-section .site-primary-title {
   margin-top: 0;
   margin-bottom: 30px;
-}
-
-#section-about {
-  padding: 8em 0;
-}
-
-#section-about .img {
-  position: relative;
-  right: 0;
-}
-
-.about {
-  border-radius: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  #section-about .img {
-    position: relative;
-    right: inherit;
-  }
-  #section-about .img img {
-    max-width: 100%;
-  }
 }
 
 #section-offer {
@@ -492,9 +484,13 @@ textarea.form-control {
   font-weight: normal;
 }
 
+/* Tekst u footeru */
+
 .site-footer p {
   color: rgba(255, 255, 255, 0.3);
 }
+
+/* Boja ikone u footeru */
 
 .site-footer a {
   color: rgba(255, 255, 255, 0.3);
@@ -547,6 +543,8 @@ textarea.form-control {
   margin: 0 auto;
 }
 
+/* Prilikom preklapanja */
+
 .site-overflow-hidden {
   overflow: hidden;
 }
@@ -574,6 +572,8 @@ textarea.form-control {
   -o-transition: .3s all ease;
   transition: .3s all ease;
 }
+
+/* Dugmici za kretanje levo-desno */
 
 .site-owl .owl-nav .owl-prev,
 .site-owl .owl-nav .owl-next {
@@ -622,11 +622,15 @@ textarea.form-control {
   opacity: 1;
 }
 
+/* Iskakanje slika sa lupom */
+
 .image-popup {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
+
+/* Prilikom zumiranja i odzumiranja slika */
 
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
@@ -712,10 +716,6 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round;
-}
-
-.email {
-  color: #000;
 }
 
 .span .btn-delete {
