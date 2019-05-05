@@ -2,32 +2,40 @@ const numAll = document.querySelectorAll('.fas.fa-plus')
 const spanAll = document.querySelectorAll('span:not(#ukupno):not(#ukupnaCena)')
 const cenaAll = document.querySelectorAll('.cena')
 const all = document.querySelector('body')
+let num = document.querySelectorAll('.num')
+
 
 
 const povecaj = (event) => {
     if (event.target.className === 'fas fa-plus') {
-        event.target.nextSibling.nextSibling.innerHTML++
-        let novaCena = parseInt(event.target.parentElement.parentElement.childNodes[7].innerHTML)
-        novaCena += parseInt(event.target.parentElement.parentElement.childNodes[3].innerHTML)
-        event.target.parentElement.parentElement.childNodes[7].innerHTML = parseInt(novaCena)
+        let kolicina = event.target.parentElement.querySelector('.num')
+        let novaKolicina = parseInt(kolicina.innerHTML)
+        kolicina.innerHTML = novaKolicina + 1
+
+        let povecajCenu = event.target.parentElement.parentElement.querySelector('.column4.povecaj')
+        let ukupnaCena = event.target.parentElement.parentElement.querySelector('.column6.cena')
+        let povecajCenu1 = parseInt(povecajCenu.innerHTML)
+        let ukupnaCena1 = parseInt(ukupnaCena.innerHTML)
+        ukupnaCena.innerHTML = ukupnaCena1 + povecajCenu1
     }
 }
 
 const smanji = (event) => {
     if (event.target.className === 'fas fa-minus') {
-        let prev = event.target.previousSibling.previousSibling
-        prev.innerHTML--
-        let novaCena = parseInt(event.target.parentElement.parentElement.childNodes[7].innerHTML)
-        novaCena -= parseInt(event.target.parentElement.parentElement.childNodes[3].innerHTML)
-        event.target.parentElement.parentElement.childNodes[7].innerHTML = parseInt(novaCena)
-        if (prev.innerHTML <= '0') {
-            prev.innerHTML = '0'
-        }
-
-        let minusCena = event.target.parentElement.parentElement.childNodes[7]
+        let kolicina = event.target.parentElement.querySelector('.num')
+        let novaKolicina = parseInt(kolicina.innerHTML)
+        kolicina.innerHTML = novaKolicina - 1
+        let smanjiCenu = event.target.parentElement.parentElement.querySelector('.column4.povecaj')
+        let ukupnaCena = event.target.parentElement.parentElement.querySelector('.column6.cena')
+        let smanjiCenu1 = parseInt(smanjiCenu.innerHTML)
+        let ukupnaCena1 = parseInt(ukupnaCena.innerHTML)
+        ukupnaCena.innerHTML = ukupnaCena1 - smanjiCenu1
         
-        if (minusCena.innerHTML <= '0') {
-            minusCena.innerHTML = '0'
+        if (kolicina.innerHTML <= 0) {
+            kolicina.innerHTML = 0
+        }
+        if (ukupnaCena.innerHTML <= 0) {
+            ukupnaCena.innerHTML = 0
         }
     }
 }
