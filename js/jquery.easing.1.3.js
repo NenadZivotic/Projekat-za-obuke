@@ -1,4 +1,6 @@
 // t: current time, b: begInnIng value, c: change In value, d: duration
+
+// Ne moze da se klikcu sekcije i da nas baci tamo
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
